@@ -7,7 +7,10 @@
 $paybox = new \Sakhnovkrg\Paybox\PayboxClient(
     123456, 'secret', 'random', true);
 
-$invoice = $paybox->createInvoice(1, 500, 'Описание заказа')
+$orderId = 1;
+$orderCost = 500;
+
+$invoice = $paybox->createInvoice($orderId, $orderCost, 'Описание заказа')
     ->setUserEmail('test@test.test')
     ->setUserPhone('77776665544')
     ->setParam1("Адрес доставки");
