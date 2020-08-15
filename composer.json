@@ -1,0 +1,23 @@
+{
+  "name": "sakhnovkrg/paybox",
+  "description": "Прием платежей через PayBox",
+  "keywords": ["paybox"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexandr Sakhnov",
+      "email": "sakhnov.krg@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "ext-curl": "*",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sakhnovkrg\\Paybox\\": ""
+    }
+  }
+}
