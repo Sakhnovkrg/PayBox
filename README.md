@@ -1,11 +1,11 @@
 ## Информация
-[https://paybox.money/kz_ru/dev](https://paybox.money/kz_ru/dev)
-
+~~[https://paybox.money/kz_ru/dev](https://paybox.money/kz_ru/dev)~~
+[https://docs.freedompay.money/](https://docs.freedompay.money/)
 ## Примеры использования
 ```
 // Cоздание тестового счета на оплату
 $paybox = new \Sakhnovkrg\Paybox\PayboxClient(
-    123456, 'secret', 'random', true);
+    'https://api.freedompay.money', 123456, 'secret', 'random', true);
 
 $orderId = 1;
 $orderCost = 500;
