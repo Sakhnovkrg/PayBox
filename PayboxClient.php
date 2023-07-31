@@ -14,7 +14,7 @@ class PayboxClient
     /**
      * @var string
      */
-    protected $baseUrl = 'https://api.paybox.money';
+    protected $baseUrl;
 
     /**
      * @var int
@@ -172,8 +172,9 @@ class PayboxClient
      * @param string $salt
      * @param bool $testingMode
      */
-    public function __construct($merchantId, $secretKey, $salt, $testingMode = false)
+    public function __construct($baseUrl, $merchantId, $secretKey, $salt, $testingMode = false)
     {
+        $this->baseUrl = $baseUrl;
         $this->merchantId = $merchantId;
         $this->secretKey = $secretKey;
         $this->salt = $salt;
