@@ -1,5 +1,6 @@
 ## Информация
 ~~[https://paybox.money/kz_ru/dev](https://paybox.money/kz_ru/dev)~~
+
 [https://docs.freedompay.money/](https://docs.freedompay.money/)
 ## Примеры использования
 ```
